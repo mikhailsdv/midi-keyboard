@@ -1,0 +1,16 @@
+{
+  "name": "midi-keyboard",
+  "version": "1.0.0",
+  "description": "Tiny Node.js script that turns your 88-key MIDI synthesizer into computer keyboard.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mikhailsdv",
+  "license": "MIT",
+  "dependencies": {
+    "clipboardy": "^3.0.0",
+    "easymidi": "^2.1.0",
+    "node-key-sender": "^1.0.11"
+  }
+}

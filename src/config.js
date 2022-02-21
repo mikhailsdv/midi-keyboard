@@ -1,0 +1,6 @@
+module.exports = {
+	DEFAULT_KEYBOARD: "ru",
+	CAPS_VELOSITY: 56,
+	REPEAT_TIMEOUT: 500,
+	REPEAT_INTERAL: 150,
+}

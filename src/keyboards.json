@@ -1,0 +1,260 @@
+{
+	"ru": {
+		"68": {
+			"type": "text",
+			"text": "о"
+		},
+		"69": {
+			"type": "text",
+			"text": "е"
+		},
+		"67": {
+			"type": "text",
+			"text": "а"
+		},
+		"70": {
+			"type": "text",
+			"text": "и"
+		},
+		"66": {
+			"type": "text",
+			"text": "н"
+		},
+		"71": {
+			"type": "text",
+			"text": "т"
+		},
+		"65": {
+			"type": "text",
+			"text": "с"
+		},
+		"72": {
+			"type": "text",
+			"text": "р"
+		},
+		"64": {
+			"type": "text",
+			"text": "в"
+		},
+		"73": {
+			"type": "text",
+			"text": "л"
+		},
+		"63": {
+			"type": "text",
+			"text": "к"
+		},
+		"74": {
+			"type": "text",
+			"text": "м"
+		},
+		"62": {
+			"type": "text",
+			"text": "д"
+		},
+		"75": {
+			"type": "text",
+			"text": "п"
+		},
+		"61": {
+			"type": "text",
+			"text": "у"
+		},
+		"76": {
+			"type": "text",
+			"text": "я"
+		},
+		"60": {
+			"type": "text",
+			"text": "ы"
+		},
+		"77": {
+			"type": "text",
+			"text": "ь"
+		},
+		"59": {
+			"type": "text",
+			"text": "г"
+		},
+		"78": {
+			"type": "text",
+			"text": "з"
+		},
+		"58": {
+			"type": "text",
+			"text": "б"
+		},
+		"79": {
+			"type": "text",
+			"text": "ч"
+		},
+		"57": {
+			"type": "text",
+			"text": "й"
+		},
+		"80": {
+			"type": "text",
+			"text": "х"
+		},
+		"56": {
+			"type": "text",
+			"text": "ж"
+		},
+		"81": {
+			"type": "text",
+			"text": "ш"
+		},
+		"55": {
+			"type": "text",
+			"text": "ю"
+		},
+		"82": {
+			"type": "text",
+			"text": "ц"
+		},
+		"54": {
+			"type": "text",
+			"text": "щ"
+		},
+		"83": {
+			"type": "text",
+			"text": "э"
+		},
+		"53": {
+			"type": "text",
+			"text": "ф"
+		},
+		"84": {
+			"type": "text",
+			"text": "ё"
+		},
+		"52": {
+			"type": "text",
+			"text": "ъ"
+		},
+		"99": {
+			"type": "text",
+			"text": "0"
+		},
+		"100": {
+			"type": "text",
+			"text": "1"
+		},
+		"101": {
+			"type": "text",
+			"text": "2"
+		},
+		"102": {
+			"type": "text",
+			"text": "3"
+		},
+		"103": {
+			"type": "text",
+			"text": "4"
+		},
+		"104": {
+			"type": "text",
+			"text": "5"
+		},
+		"105": {
+			"type": "text",
+			"text": "6"
+		},
+		"106": {
+			"type": "text",
+			"text": "7"
+		},
+		"107": {
+			"type": "text",
+			"text": "8"
+		},
+		"108": {
+			"type": "text",
+			"text": "9"
+		},
+		"85": {
+			"type": "text",
+			"text": "."
+		},
+		"86": {
+			"type": "text",
+			"text": ","
+		},
+		"87": {
+			"type": "text",
+			"text": "?"
+		},
+		"88": {
+			"type": "text",
+			"text": ":"
+		},
+		"89": {
+			"type": "text",
+			"text": "-"
+		},
+		"90": {
+			"type": "text",
+			"text": "!"
+		},
+		"22": {
+			"type": "text",
+			"text": "😀"
+		},
+		"23": {
+			"type": "text",
+			"text": "❤"
+		},
+		"24": {
+			"type": "text",
+			"text": "😭"
+		},
+		"25": {
+			"type": "text",
+			"text": "😂"
+		},
+		"26": {
+			"type": "text",
+			"text": "😎"
+		},
+		"27": {
+			"type": "text",
+			"text": "🎹"
+		},
+		"28": {
+			"type": "text",
+			"text": "💩"
+		},
+		"29": {
+			"type": "text",
+			"text": "pornhub.com"
+		},
+		"30": {
+			"type": "text",
+			"text": "onlyfans.com"
+		},
+		"21": {
+			"type": "key",
+			"key": "back_space"
+		},
+		"48": {
+			"type": "key",
+			"key": "enter"
+		},
+		"91": {
+			"type": "key",
+			"key": "left"
+		},
+		"92": {
+			"type": "key",
+			"key": "up"
+		},
+		"93": {
+			"type": "key",
+			"key": "right"
+		},
+		"94": {
+			"type": "key",
+			"key": "down"
+		}
+	}
+}
