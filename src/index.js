@@ -28,36 +28,38 @@ clipboardy.then(clipboard => {
 		pressedKeys[id] = null
 	}
 
+	const middleware = ({note, velocity}) => {
+		const keyboardItem = keyboards[DEFAULT_KEYBOARD][note] || {type: "text", text: String(note)}
+		if (keyboardItem.type === "text") {
+			let letter = keyboardItem.text
+			velocity > CAPS_VELOSITY && (letter = letter.toUpperCase())
+			if (velocity > 0) {
+				pressKey(note, () => typeString(letter))
+			} else {
+				unpressKey(note)
+			}
+		} else if (keyboardItem.type === "key") {
+			if (velocity > 0) {
+				pressKey(note, () => ks.sendKey(keyboardItem.key))
+			} else {
+				unpressKey(note)
+			}
+		}
+	}
+
 	const inputs = easymidi.getInputs()
 	if (inputs.length) {
 		const input = new easymidi.Input(inputs[0])
+		const pedalItem = keyboards[DEFAULT_KEYBOARD].pedal
 
-		input.on("cc", ({value, controller}) => {
-			if (controller === 64 && value > 0) {
-				pressKey(0, () => ks.sendKey("space"))
-			} else {
-				unpressKey(0)
-			}
-		})
+		pedalItem &&
+			input.on("cc", ({value, controller}) => {
+				if (controller === 64) {
+					middleware({note: "pedal", velocity: value > 0 ? 1 : 0})
+				}
+			})
 
-		input.on("noteon", ({note, velocity}) => {
-			const keyboardItem = keyboards[DEFAULT_KEYBOARD][note] || {type: "text", text: String(note)}
-			if (keyboardItem.type === "text") {
-				let letter = keyboardItem.text
-				velocity > CAPS_VELOSITY && (letter = letter.toUpperCase())
-				if (velocity > 0) {
-					pressKey(note, () => typeString(letter))
-				} else {
-					unpressKey(note)
-				}
-			} else if (keyboardItem.type === "key") {
-				if (velocity > 0) {
-					pressKey(note, () => ks.sendKey(keyboardItem.key))
-				} else {
-					unpressKey(note)
-				}
-			}
-		})
+		input.on("noteon", middleware)
 	} else {
 		console.log("No MIDI device found")
 	}
